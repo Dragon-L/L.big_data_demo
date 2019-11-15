@@ -3,12 +3,10 @@
 
 # build a new image with basic  centos
 FROM centos
-# who is the author
-MAINTAINER qiwei
 
 # add jdk
 RUN mkdir /usr/local/java
-ADD jdk1.8.0_231 /usr/local/java/jdkls
+ADD resource/jdk1.8.0_231 /usr/local/java/jdk
 # make a symbol link
 #RUN ln -s /usr/local/java/jdk1.8.0_231 /usr/local/java/jdk
 

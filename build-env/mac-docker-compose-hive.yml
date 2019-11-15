@@ -17,7 +17,7 @@ services:
     volumes:
       - /Users/glliao/WorkSpace/Tool/hadoop-3.1.2:/opt/hadoop
       - /Users/glliao/WorkSpace/Tool/apache-hive-3.1.2-bin:/opt/hive
-      - /Users/glliao/WorkSpace/Forked/bigdata-docker/build-env/script:/opt/script
+      - /Users/glliao/WorkSpace/Forked/bigdata-docker/build-env/script:/root/script
       - /Users/glliao/WorkSpace/Forked/bigdata-docker/build-env/etc/hadoop:/etc/hadoop
       - /Users/glliao/WorkSpace/Forked/bigdata-docker/build-env/etc/hive:/etc/hive
     environment:
@@ -40,7 +40,7 @@ services:
       hd-net:
         ipv4_address: 172.18.0.11
     volumes:
-      - /Users/glliao/WorkSpace/Forked/bigdata-docker/build-env/script:/opt/script
+      - /Users/glliao/WorkSpace/Forked/bigdata-docker/build-env/script:/root/script
       - /Users/glliao/WorkSpace/Forked/bigdata-docker/build-env/etc/hadoop:/etc/hadoop
       - /Users/glliao/WorkSpace/Tool/hadoop-3.1.2:/opt/hadoop
     environment:
@@ -61,7 +61,7 @@ services:
       hd-net:
         ipv4_address: 172.18.0.12
     volumes:
-      - /Users/glliao/WorkSpace/Forked/bigdata-docker/build-env/script:/opt/script
+      - /Users/glliao/WorkSpace/Forked/bigdata-docker/build-env/script:/root/script
       - /Users/glliao/WorkSpace/Forked/bigdata-docker/build-env/etc/hadoop:/etc/hadoop
       - /Users/glliao/WorkSpace/Tool/hadoop-3.1.2:/opt/hadoop
     environment:
