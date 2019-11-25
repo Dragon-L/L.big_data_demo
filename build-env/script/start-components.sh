@@ -3,6 +3,7 @@
 command=$1
 shift
 master_start_fun(){
+  hdfs namenode -format
   hdfs --daemon start namenode
   yarn --daemon start resourcemanager
 }

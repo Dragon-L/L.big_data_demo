@@ -41,6 +41,8 @@ RUN cat /root/.ssh/id_rsa.pub >> /root/.ssh/authorized_keys
 # set password of root
 RUN echo "root:123456" | chpasswd
 
+WORKDIR /root
+
 # open the port 22
 EXPOSE 22
 # when start a container it will be executed
