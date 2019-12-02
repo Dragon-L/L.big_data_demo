@@ -1,1 +1,0 @@
-docker build -t hd-container:1.0 .
