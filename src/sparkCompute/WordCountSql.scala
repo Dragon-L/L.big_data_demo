@@ -13,13 +13,13 @@ object WordCountSql {
       .select("word")
       .groupBy("word")
       .count()
-      .orderBy("word")
-      //      .coalesce(1)
+      .orderBy("count")
+      .coalesce(1)
       .write
       .mode(SaveMode.Overwrite)
       .option("quoteAll", false)
       .option("quote", " ")
-      .text("/output/outputSql")
+      .csv("output")
 
     spark.close()
   }
