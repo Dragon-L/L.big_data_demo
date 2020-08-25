@@ -19,8 +19,8 @@ public class maxTemperature {
         job.setMapperClass(recordsMapper.class);
         job.setReducerClass(recordsReducer.class);
 
-        FileInputFormat.addInputPath(job, new Path("/Users/glliao/WorkSpace/My_project/L.big_data_demo/src/main/java/mapReduceDemo/temperatureRecords.txt"));
-        FileOutputFormat.setOutputPath(job, new Path("/Users/glliao/WorkSpace/My_project/L.big_data_demo/src/main/java/mapReduceDemo/output"));
+        FileInputFormat.addInputPath(job, new Path("/Users/glliao/WorkSpace/My_project/L.big_data_demo/src/hdfs/java/mapReduceDemo/temperatureRecords.txt"));
+        FileOutputFormat.setOutputPath(job, new Path("/Users/glliao/WorkSpace/My_project/L.big_data_demo/src/hdfs/java/mapReduceDemo/output"));
 
         job.setOutputKeyClass(Text.class);
         job.setOutputValueClass(IntWritable.class);
